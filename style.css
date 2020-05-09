@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan|Bowlby+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Sree+Krushnadevaraya');
+
+html{
+  overflow-x:hidden;
+}
+
+body{
+  margin-left:auto;
+  margin-right:auto;
+  width:100%;
+  font-size:18px;
+  background:linear-gradient(-135deg,#f5f5f5,#EAECC6);
+}
+
+header{
+  height:60px;
+  width:100%;
+  z-index:1000;
+  position:fixed;
+  top:0px;
+  font-size:1.2rem;
+  background-color:tomato;
+  overflow:hidden;
+  display:flex;
+  justify-content: space-between;
+}
+
+a, a:visited header a,a:visited{
+  color:inherit;
+  text-decoration:none;
+}
+
+.header-left{
+  color:white;
+  font-size:2em;
+  font-family: 'Bowlby One SC', cursive;
+  position:relative;
+  margin-left:60px;
+}
+
+.header-right{
+  margin-right:60px;
+}
+
+.header-right ul{
+  list-style:none;
+}
+
+.header-right li{
+  color:white;
+  letter-spacing:1px;
+  font-weight: bold;
+  display:inline-block; 
+}
+
+.header-right li:hover{
+  color: blue;
+}
+
+.header-right li::after {content:"|"; color:rgba(0,0,0,0);}
+
+.navi-trigger span {
+  display:none;
+  position:absolute; /*.header-right div に対して*/
+  width:100%;
+  border-bottom:solid 3px white;
+  transition: .35s ease-in-out;
+  color:white;
+}
+
+.SNS-wrapper{
+  text-align:center;
+}
+
+.SNS li{
+  display:inline-block;
+  text-align:center;
+}
+
+.btn {
+  font-size:50px;
+  margin-right:50px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.section-wrapper{
+  border: black 1px solid;
+  border-bottom-width:2px;
+  border-top-width:2px;
+}
+
+.section {
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 30px;
+  text-align:center;
+  font-family: 'Roboto Slab', serif;
+  width:700px;
+}
+
+.section h1{
+  font-family: 'Sree Krushnadevaraya', serif;
+  letter-spacing:1px;
+  font-size:50px;
+  margin-bottom:30px;
+  text-align:center;
+}
+
+.headshot{
+  padding:0;
+  width:100%;
+  display:inline-block;
+}
+
+.headshot li{
+  transform:skewX(-2deg);
+  list-style:none;
+}
+
+.headshot li img{
+  width:30%;
+  box-shadow:10px 10px rgba(0,0,0,0.1);
+}
+
+.about {
+  text-align:left;
+  width:100%;
+  display:inline-block;
+}
+
+.publications{
+  background-color:#dcdcdc;
+}
+
+.publications li{
+  text-align:left;
+}
+
+.skills{
+  background-color:#fff;
+}
+
+.skills ul{
+  text-align:center;
+  display:flex;
+}
+
+.skills li{
+  padding: 0;
+  margin: 0;
+  text-align:left;
+  width:100%;
+}
+
+.contact{
+  background-color:#dcdcdc;
+}
+
+.contact i{
+  font-size:70px;
+}
+
+.contact-box{
+  width:90%;
+}
+
+.contact li{
+  display:inline-block;
+  vertical-align: top;
+  width:30%;
+  text-align:center;
+}
+
+.background-img-wrapper{
+  position:relative;
+}
+
+.background-img-wrapper p{
+  color:black;
+  font-family: 'Baloo Chettan', cursive;
+  font-size:5rem;
+  text-align:left;
+  position:absolute;
+  z-index:10;
+  top: 45%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  animation:rotate-animation 3s linear infinite;
+  margin:0;
+  padding:0;
+}
+
+#background-img{
+  width:auto;
+  height:auto;
+  min-width:100%;
+  min-height:100%;
+  background-size:cover;
+  z-index:1;
+}
+
+.background-video-wrapper{
+  position:relative;
+}
+
+.background-video-wrapper p{
+  position:absolute;
+  color:white;
+  text-align: left;
+  top:10px;
+  left:40px;
+  width:50%;
+}
+
+.background-video-wrapper video{
+  width:100%;
+}
+
+.footer{
+  text-align:center;
+}
